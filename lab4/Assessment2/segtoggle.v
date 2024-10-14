@@ -72,7 +72,7 @@ module segtoggle(
 
 // Enter your Bench Number here. If required, add the offset given
     wire [3:0] benchNo_10 = 4'd0;  // Enter the tens digit of YOUR bench number
-    wire [3:0] benchNo_1 = 4'd05;   // Enter the ones digit of YOUR bench number
+    wire [3:0] benchNo_1 = 4'd0   // Enter the ones digit of YOUR bench number
 
 // Generate the 8-bit product of a and b
     assign res = a * b;   // generate the 8-bit product. 
