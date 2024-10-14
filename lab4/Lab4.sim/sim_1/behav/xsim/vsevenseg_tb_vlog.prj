@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Downloads/lab4/seg2digit_synth.v" \
+"../../../../../Downloads/vsevenseg.v" \
+"../../../../../Downloads/lab4/vsevenseg_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/phong004/Downloads/lab4/seg2digit_synth.v,1728874161,verilog,,C:/Users/phong004/Downloads/vsevenseg.v,,LUT6;MUXF7;OBUF;seg2digit,,,,,,,,
+,,,,,,vsevenseg_tb,,,,,,,,
+C:/Users/phong004/Downloads/vsevenseg.v,1728874677,verilog,,C:/Users/phong004/Downloads/lab4/vsevenseg_tb.v,,vsevenseg,,,,,,,,
+C:/Users/phong004/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,

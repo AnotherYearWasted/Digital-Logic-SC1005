@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct 14 11:54:25 2024
+# Process ID: 17744
+# Current directory: C:/Users/phong004/Digital-Logic-SC1005/lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16096 C:\Users\phong004\Digital-Logic-SC1005\lab4\Lab4.xpr
+# Log file: C:/Users/phong004/Digital-Logic-SC1005/lab4/vivado.log
+# Journal file: C:/Users/phong004/Digital-Logic-SC1005/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/phong004/Digital-Logic-SC1005/lab4/Lab4.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/phong004/Digital-Logic-SC1005/lab4/Lab4' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/Downloads/vsevenseg.v'; using path 'C:/Users/phong004/Downloads/vsevenseg.v' instead.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/vaddoflow.xdc', nor could it be found using path 'C:/Users/phong004/Digital-Logic-SC1005/lab4/Downloads/lab4/vaddoflow.xdc'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/seg2digit_synth.v', nor could it be found using path 'C:/Users/phong004/Digital-Logic-SC1005/lab4/Downloads/lab4/seg2digit_synth.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/vsevenseg_tb.v', nor could it be found using path 'C:/Users/phong004/Digital-Logic-SC1005/lab4/Downloads/lab4/vsevenseg_tb.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/Downloads/vsevenseg.v'; using path 'C:/Users/phong004/Downloads/vsevenseg.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/Downloads/vsevenseg.v'; using path 'C:/Users/phong004/Downloads/vsevenseg.v' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 864.621 ; gain = 200.031
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/seg2digit_synth.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/seg2digit_synth.v
+remove_files  -fileset sim_1 C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/seg2digit_synth.v
+WARNING: [Vivado 12-818] No files matched 'C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/seg2digit_synth.v'
+export_ip_user_files -of_objects  [get_files C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/vsevenseg_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/vsevenseg_tb.v
+export_ip_user_files -of_objects  [get_files C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/vaddoflow.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/phong004/Digital-Logic-SC1005/Downloads/lab4/vaddoflow.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/phong004/Digital-Logic-SC1005/lab4/vaddoflow.xdc
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/phong004/Digital-Logic-SC1005/lab4/vsevenseg_tb.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/phong004/Digital-Logic-SC1005/lab4/seg2digit_synth.v
+update_compile_order -fileset sim_1
