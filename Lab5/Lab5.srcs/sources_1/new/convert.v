@@ -21,12 +21,14 @@
 
 
 module convert(
-        input [3:0] x,
-        output reg [3:0] y
-    );
-        
+    input [3:0] x,
+    input sel1,
+    output reg [3:0] y
+);
+    
+    // COFFEE IS GOOD
     always @ *
-        begin
+        if (sel1) begin
             case (x)
                 4'd0: y = 4'hA;
                 4'd1: y = 4'hA;
@@ -44,7 +46,7 @@ module convert(
                 4'd13: y = 4'h0;
                 4'd14: y = 4'h0;
                 4'd15: y = 4'hD;
-                
+                default: y = 4'b0000; // Default case
             endcase
-         end
+        end 
 endmodule

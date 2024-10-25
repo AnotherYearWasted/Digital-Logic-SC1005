@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\phong004\digital-logic-sc1005\Lab5\Lab5.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1729760566">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1729823470">
   <File Type="BITSTR-BMM" Name="Lab5_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Lab5_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Lab5_top_timing_summary_init.rpt"/>
@@ -85,21 +85,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Downloads/Lab5_student/seg7_driver.v">
+    <File Path="$PSRCDIR/sources_1/new/seg7_driver.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Downloads/Lab5_student/slow_clkgen.v">
+    <File Path="$PSRCDIR/sources_1/new/slow_clkgen.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Downloads/Lab5_student/Lab5_top.v">
+    <File Path="$PSRCDIR/sources_1/new/Lab5_top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -114,7 +114,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../Downloads/Lab5_student/Lab5_top.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/lab5_top.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

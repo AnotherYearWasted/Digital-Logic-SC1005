@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/phong004/Lab5/Lab5.runs/impl_1'
+HD_PWD='C:/Users/phong004/digital-logic-sc1005/Lab5/Lab5.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log Lab5_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Lab5_top.tcl -notrace
 
 

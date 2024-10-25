@@ -23,6 +23,7 @@
 module scroll(
         input clk,
         input rst,
+        input sel1,
         output [15:0] display
     );
     
@@ -31,11 +32,11 @@ module scroll(
     
     always@(posedge(clk))
         if (rst)
-            cnt <= 16'b0;
+            cnt <= 4'b0;
         else
             cnt <= cnt + 1'b1;
     
-    always @*
+    always@(posedge(clk))
         begin
             a <= cnt;
             b <= a;
@@ -43,10 +44,10 @@ module scroll(
             d <= c;
         end
     
-    convert uut4(.x(a), .y(display[15:12]));
-    convert uut5(.x(b), .y(display[11:8]));
-    convert uut6(.x(c), .y(display[7:4]));
-    convert uut7(.x(d), .y(display[3:0]));
+    convert uut4(.x(a), .sel1(sel1), .y(display[3:0]));
+    convert uut5(.x(b), .sel1(sel1), .y(display[7:4]));
+    convert uut6(.x(c), .sel1(sel1), .y(display[11:8]));
+    convert uut7(.x(d), .sel1(sel1), .y(display[15:12]));
     
     
 endmodule
