@@ -22,13 +22,13 @@
 
 module convert(
     input [3:0] x,
-    input sel1,
+    input selL,
     output reg [3:0] y
 );
     
     // COFFEE IS GOOD
-    always @ *
-        if (sel1) begin
+    always @ * begin
+        if (selL) begin
             case (x)
                 4'd0: y = 4'hA;
                 4'd1: y = 4'hA;
@@ -48,5 +48,9 @@ module convert(
                 4'd15: y = 4'hD;
                 default: y = 4'b0000; // Default case
             endcase
-        end 
+        end
+        else begin
+            y = x;
+        end
+    end
 endmodule

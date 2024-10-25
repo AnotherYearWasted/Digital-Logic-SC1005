@@ -23,7 +23,7 @@
 module scroll(
         input clk,
         input rst,
-        input sel1,
+        input selL,
         output [15:0] display
     );
     
@@ -44,10 +44,10 @@ module scroll(
             d <= c;
         end
     
-    convert uut4(.x(a), .sel1(sel1), .y(display[3:0]));
-    convert uut5(.x(b), .sel1(sel1), .y(display[7:4]));
-    convert uut6(.x(c), .sel1(sel1), .y(display[11:8]));
-    convert uut7(.x(d), .sel1(sel1), .y(display[15:12]));
+    convert uut4(.x(a), .selL(selL), .y(display[3:0]));
+    convert uut5(.x(b), .selL(selL), .y(display[7:4]));
+    convert uut6(.x(c), .selL(selL), .y(display[11:8]));
+    convert uut7(.x(d), .selL(selL), .y(display[15:12]));
     
     
 endmodule

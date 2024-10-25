@@ -16,7 +16,7 @@ module seg7_driver(
     input clk,                  // 100Mz system clock
     input rst,                  // Active high rst
     input sel,                  // The sel input
-    input sel1,                 // Customise: I love you
+    input selL,                 // Customise: I love you
     input [15:0] value,       // the 4 digits to be displayed (each 4-bits)
     input [3:0] anode_d,        // active low 4-bit anode driver. 0000 turns all ON.
     output reg [6:0] seg_L,     // 7-bit active low segment
@@ -74,7 +74,7 @@ module seg7_driver(
 // the 7 -bit segments
     always @*
     begin
-        if (sel1) begin
+        if (selL) begin
             case (selnum)
                 4'd0  : seg_L = 7'b100_0000;
                 4'd1  : seg_L = 7'b111_1001;

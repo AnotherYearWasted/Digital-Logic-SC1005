@@ -5,8 +5,8 @@ set_property PACKAGE_PIN W5 [get_ports clk]
  
 # Switches SW3-SW0
 # // input b
-#set_property PACKAGE_PIN V17 [get_ports {b[0]}]					
-#	set_property IOSTANDARD LVCMOS33 [get_ports {b[0]}]
+set_property PACKAGE_PIN V17 [get_ports {b[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {b[0]}]
 #set_property PACKAGE_PIN V16 [get_ports {b[1]}]					
 #	set_property IOSTANDARD LVCMOS33 [get_ports {b[1]}]
 #set_property PACKAGE_PIN W16 [get_ports {b[2]}]					
@@ -74,10 +74,10 @@ set_property PACKAGE_PIN T18 [get_ports sel]
 	set_property IOSTANDARD LVCMOS33 [get_ports sel]
 #set_property PACKAGE_PIN W19 [get_ports btnL]						
 	#set_property IOSTANDARD LVCMOS33 [get_ports btnL]
-set_property PACKAGE_PIN T17 [get_ports sel1]						
-	set_property IOSTANDARD LVCMOS33 [get_ports sel1]
-#set_property PACKAGE_PIN U17 [get_ports btnD]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports btnD]
+#set_property PACKAGE_PIN T17 [get_ports selL]						
+#	set_property IOSTANDARD LVCMOS33 [get_ports selL]
+#set_property PACKAGE_PIN U17 [get_ports selL]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports selL]
  
 
 #7 segment display // active low segments

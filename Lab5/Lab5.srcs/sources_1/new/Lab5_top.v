@@ -23,20 +23,21 @@
 
 // The top level module. It implements the Verilog system shown in Figure 1.
 
-module Lab5_top(input clk, rst, sel, sel1, output [6:0] seg_L, output [3:0] anode_L);
-
-    // declare necessary wires here
-    wire [17:0] display;
-    wire nclk;
-    
-    
+module segtoggle(
+    input [0:0] b,
+    input clk,
+    input rst,
+    input sel,
+    output [6:0] seg_L,
+    output [3:0] anode_L    // needed to select the correct 7 seg display
+    );
     
     // instantiate modules here
     
-    scroll uut1 (.clk(nclk), .rst(rst), .sel1(sel1), .display(display));
+    scroll uut1 (.clk(nclk), .rst(rst), .selL(b[0]), .display(display));
     
     slow_clkgen uut2(.clk(clk), .rst(rst), .clk_out(nclk));
     
-    seg7_driver uut3 (.clk(clk), .rst(rst), .sel(sel), .sel1(sel1), .value(display), .anode_d(4'b0000), .seg_L(seg_L), .anode_L(anode_L));
+    seg7_driver uut3 (.clk(clk), .rst(rst), .sel(sel), .selL(b[0]), .value(display), .anode_d(4'b0000), .seg_L(seg_L), .anode_L(anode_L));
 
 endmodule
