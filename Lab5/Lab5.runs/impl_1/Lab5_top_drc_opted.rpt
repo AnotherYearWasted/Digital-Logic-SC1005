@@ -1,0 +1,42 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Oct 28 14:40:03 2024
+| Host         : hwl3-vc005 running 64-bit major release  (build 9200)
+| Command      : report_drc -file Lab5_top_drc_opted.rpt -pb Lab5_top_drc_opted.pb -rpx Lab5_top_drc_opted.rpx
+| Design       : Lab5_top
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut2/a[3]_i_1 is driving clock pin of 20 cells. This could lead to large hold time violations. Involved cells are:
+uut1/a_reg[0], uut1/a_reg[1], uut1/a_reg[2], uut1/a_reg[3], uut1/b_reg[0], uut1/b_reg[1], uut1/b_reg[2], uut1/b_reg[3], uut1/c_reg[0], uut1/c_reg[1], uut1/c_reg[2], uut1/c_reg[3], uut1/cnt_reg[0], uut1/cnt_reg[1], uut1/cnt_reg[2] (the first 15 of 20 listed)
+Related violations: <none>
+
+

@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log segtoggle.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source segtoggle.tcl
+EAStep vivado -log Lab5_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab5_top.tcl

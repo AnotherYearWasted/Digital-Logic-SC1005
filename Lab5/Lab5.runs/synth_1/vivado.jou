@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Oct 26 04:52:33 2024
-# Process ID: 8428
+# Start of session at: Mon Oct 28 14:39:13 2024
+# Process ID: 2732
 # Current directory: C:/Users/phong004/digital-logic-sc1005/Lab5/Lab5.runs/synth_1
-# Command line: vivado.exe -log segtoggle.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source segtoggle.tcl
-# Log file: C:/Users/phong004/digital-logic-sc1005/Lab5/Lab5.runs/synth_1/segtoggle.vds
+# Command line: vivado.exe -log Lab5_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab5_top.tcl
+# Log file: C:/Users/phong004/digital-logic-sc1005/Lab5/Lab5.runs/synth_1/Lab5_top.vds
 # Journal file: C:/Users/phong004/digital-logic-sc1005/Lab5/Lab5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source segtoggle.tcl -notrace
+source Lab5_top.tcl -notrace

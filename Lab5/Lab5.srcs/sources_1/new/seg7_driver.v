@@ -15,8 +15,8 @@
 module seg7_driver(
     input clk,                  // 100Mz system clock
     input rst,                  // Active high rst
-    input sel,                  // The sel input
-    input selL,                 // Customise: I love you
+    input sel,                 // The sel input
+    input selL,
     input [15:0] value,       // the 4 digits to be displayed (each 4-bits)
     input [3:0] anode_d,        // active low 4-bit anode driver. 0000 turns all ON.
     output reg [6:0] seg_L,     // 7-bit active low segment
@@ -37,7 +37,7 @@ module seg7_driver(
 		  count <= count+1'b1;
 		  
 	assign seg7_clk = count[19:18];	   // select the 2 MSBs to drive the 7 seg anodes
-	assign value_sel = (sel) ? {8'h22, benchNo_10, benchNo_1} : value;
+	assign value_sel = (sel) ? {8'hAA, benchNo_10, benchNo_1} : value;
 
 	// This always block generates
 	// 	1. The value displayed on each 7-seg display (selnum[3:0])
@@ -67,14 +67,14 @@ module seg7_driver(
 // **************** You should NOT modify the code above ****************** //
 
 // Enter your Bench Number here. If required, add the offset given
-    wire [3:0] benchNo_10 = 4'd3;  // Enter the tens digit of YOUR bench number
-    wire [3:0] benchNo_1 = 4'd3;   // Enter the ones digit of YOUR bench number
+    wire [3:0] benchNo_10 = 4'd0;  // Enter the tens digit of YOUR bench number
+    wire [3:0] benchNo_1 = 4'd5;   // Enter the ones digit of YOUR bench number
 
 
 // the 7 -bit segments
     always @*
     begin
-        if (selL) begin
+        if (~selL) begin
             case (selnum)
                 4'd0  : seg_L = 7'b100_0000;
                 4'd1  : seg_L = 7'b111_1001;
@@ -106,7 +106,7 @@ module seg7_driver(
                 4'd6  : seg_L = 7'b100_0001; 
                 4'd7  : seg_L = 7'b000_0110;
                 4'd8  : seg_L = 7'b111_1111;
-                4'd9  : seg_L = 7'b110_0110;
+                4'd9  : seg_L = 7'b001_1001;
                 4'd10 : seg_L = 7'b100_0000;
                 4'd11 : seg_L = 7'b110_0011;        
                 default:seg_L = 7'b111_1111;
@@ -114,4 +114,6 @@ module seg7_driver(
          end
     end
 
+
 endmodule
+

@@ -28,20 +28,20 @@ module convert(
     
     // COFFEE IS GOOD
     always @ * begin
-        if (selL) begin
+        if (~selL) begin
             case (x)
                 4'd0: y = 4'hA;
                 4'd1: y = 4'hA;
                 4'd2: y = 4'hC;
                 4'd3: y = 4'h0;
-                4'd4: y = 4'h0;
+                4'd4: y = 4'hF;
                 4'd5: y = 4'hF;
-                4'd6: y = 4'hF;
+                4'd6: y = 4'hE;
                 4'd7: y = 4'hE;
-                4'd8: y = 4'hE;
-                4'd9: y = 4'hA;
-                4'd10: y = 4'h1;
-                4'd11: y = 4'h5;
+                4'd8: y = 4'hA;
+                4'd9: y = 4'h1;
+                4'd10: y = 4'h5;
+                4'd11: y = 4'hA;
                 4'd12: y = 4'h9;
                 4'd13: y = 4'h0;
                 4'd14: y = 4'h0;
