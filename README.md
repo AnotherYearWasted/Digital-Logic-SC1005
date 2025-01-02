@@ -1,4 +1,4 @@
-# SC1003 Digital Logic Laboratory Assessment
+# SC1005 Digital Logic Laboratory Assessment
 
 BASYS3 FPGA board:
 
