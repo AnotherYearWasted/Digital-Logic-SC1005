@@ -32,12 +32,12 @@ Goal: Addition of 2 4-bit numbers works and the overflow signal works if the res
 
 ##### Design sources (Assessment A)
 
-* `vaddoflow.v`
-* `vsevenseg.v`
+* [`vaddoflow.v`](lab4/Assessment1/vaddoflow.v)
+* [`vsevenseg.v`](lab4/Assessment1/vsevenseg.v)
 
 ##### Constraints sources (Assessment A)
 
-* `vaddoflow.xdc`
+* [`vaddoflow.xdc`](lab4/Assessment1/vaddoflow.xdc)
 
 Then just run implementation, generate bitstream, and program to the device
 
@@ -55,11 +55,11 @@ How it works:
 
 ##### Design sources (Assessment B)
 
-* `segtoggle.v`
+* [`segtoggle.v`](lab4/Assessment2/segtoggle.v)
 
 ##### Constraints sources (Assessment B)
 
-* `seqtoggle.xdc`
+* [`seqtoggle.xdc`](lab4/Assessment2/seqtoggle.xdc)
 
 Remember to put your bench number into the benchnumber area
 
@@ -72,4 +72,16 @@ Example: C05, your bench number is 5 so you just need to run 5
 
 ## Lab 5
 
-* This is a todo part
+Note that [`Lab5_top.v`](Lab5/Lab5.srcs/sources_1/new/Lab5_top.v) is different from the one you are provided. Therefore, you need to copy and paste all files in order to run the code.
+
+### Design sources
+
+* [`Lab5_top.v`](Lab5/Lab5.srcs/sources_1/new/Lab5_top.v)
+* [`scroll.v`](Lab5/Lab5.srcs/sources_1/new/scroll.v)
+* [`seg7_driver.v`](Lab5/Lab5.srcs/sources_1/new/seg7_driver.v)
+* [`slow_clkgen.v`](Lab5/Lab5.srcs/sources_1/new/slow_clkgen.v)
+* [`convert.v`](Lab5/Lab5.srcs/sources_1/new/convert.v)
+
+### Contraints sources
+
+* [`Lab5_top.xdc`](Lab5/Lab5.srcs/constrs_1/new/Lab5_top.xdc)
